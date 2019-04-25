@@ -23,20 +23,12 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    font-family: "Menlo", "Meslo LG", monospace;
+    font-family: monospace;
     text-rendering: geometricPrecision;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     padding: 0;
     margin: 0;
-}
-
-a,
-a:active,
-a:focus,
-input:focus {
-    text-decoration: none !important;
-    outline: 0
 }
 
 .content {
@@ -64,7 +56,51 @@ input:focus {
     vertical-align: center;
 }
 
-.main {}
+
+
+
+#logo,
+#logo>* {
+    position: absolute;
+    top: 13%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+}
+
+#logo>* {
+    animation: giggle 1s ease-in-out infinite;
+    mix-blend-mode: difference;
+}
+
+#logo .r {
+    color: #f00;
+    left: -0.5px;
+}
+
+#logo .g {
+    color: #0f0;
+    animation-delay: -0.67s;
+}
+
+#logo .b {
+    color: #00f;
+    animation-delay: -0.33s;
+    left: 0.5px;
+}
+
+@keyframes giggle {
+    0%,
+    100% {
+        transform: translate(-50%, -50%) translateY(-6px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(6px);
+    }
+}
+
+
+
+
 
 p {
     font-size: 1em;
