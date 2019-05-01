@@ -135,11 +135,12 @@ p a {
 }
 
 .footer {
-    color: #707070
+    color: #707070;
 }
 
 .footer a {
-    color: #707070
+    color: #707070;
+    text-decoration: none;
 }
 
 .footer span {
